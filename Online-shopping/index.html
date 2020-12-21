@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" async></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    </head>
+    <body>
+         <header class="main-header text-warning">
+            <nav class="main-nav nav">
+                <!-- <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul> -->
+                <h2 class="container text-white  p-3">Welcome to online book purchase</h2>
+            </nav>
+            <div class="float-right ">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price text-white">Rs 0</span>
+    
+            </div>
+        </header> 
+        <div class="container-fluid d-flex">
+            <div class=" col-sm-7">
+                <section class=" content-section">
+                    <!-- <h2 class="section-header">Books To Purchase</h2> -->
+                    <div class=" shop-items">
+                        <div class="col-md-3 card shop-item">
+                            <img class="shop-item-image" src="./assets/atomichabits.jpg">
+                            <span class="shop-item-title">Atomic habits</span>
+
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">200 Rs</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 card shop-item">
+                            <img class="shop-item-image" src="./assets/Napoleon-Hill-s-Golden-Rules-SDL985750916-1-e90bd.jpg">
+                            <span class="shop-item-title">Rich dad poor dad</span>
+
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">315 Rs</span>
+                                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 card shop-item">
+                            <img class="shop-item-image" src="./assets/rich.jpg">
+                            <span class="shop-item-title">Think and grow rich</span>
+
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">172 Rs</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 card shop-item">
+                            <img class="shop-item-image" src="./assets/power.jpg">
+                            <span class="shop-item-title">Napoleon Hill's Golden Rules</span>
+
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">313 Rs</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 card shop-item">
+                            <img class="shop-item-image" src="./assets/think.jpg">
+                            <span class="shop-item-title">The Power of Your Subconscious Mind</span>
+
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">149 Rs</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 card shop-item">
+                            <img class="shop-item-image" src="./assets/super.jpg">
+
+                            <span class="shop-item-title">The Super Intelligence</span>
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">534</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container content-section">
+                    <h2 class="section-header"></h2>
+                    <div class="shop-items">
+        
+        
+                    </div>
+                </section>
+                <!-- <section class="container content-section">
+                    <h2 class="section-header">CART</h2>
+                    <div class="cart-row-delete">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+        
+
+                </section> -->
+            </div>
+        <!-- here is the cart items  going to add ------------------------- -->
+        <div class="container   col-sm-  cart-items">
+
+        </div>
+        <!-- <div class="cart-total ">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs 0</span>
+            <button id="myBtn" class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </div> -->
+
+
+
+        <!-- here is the cart items  going to add  ------------------------------>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="jumbotron">
+                  
+                  <div class="bill-image"></div>
+                  <div class="bill-title"></div>
+                  <div class="bill-price"></div>
+                  <div class="bill-quantity"></div>
+
+              </div>
+           </div>
+          
+          </div>
+
+        </div>
+
+
+
+    
+        <!-- <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer> -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    </body>
+</html>
